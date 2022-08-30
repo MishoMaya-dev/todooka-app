@@ -1,0 +1,40 @@
+@import "reset";
+@import "mixins";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  font-family: Roboto;
+  font-size: 14px;
+}
+
+button {
+  cursor: pointer;
+  &:disabled {
+    opacity: 0.5;
+  }
+}
+
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.h3 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
